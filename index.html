@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section class="card">
+            <div id="card-front">
+                <img src="imagens/visa_logo.png">
+                <div id="card-numb">
+                    <span>
+                        <span id="g11">#</span>
+                        <span id="g12">#</span>
+                        <span id="g13">#</span>
+                        <span id="g14">#</span>
+                    </span>
+                    <span>
+                        <span id="g25">#</span>
+                        <span id="g26">#</span>
+                        <span id="g27">#</span>
+                        <span id="g28">#</span>
+                    </span>
+                    <span>
+                        <span id="g39">#</span>
+                        <span id="g310">#</span>
+                        <span id="g311">#</span>
+                        <span id="g312">#</span>
+                    </span>
+                    <span>
+                        <span id="g413">#</span>
+                        <span id="g414">#</span>
+                        <span id="g415">#</span>
+                        <span id="g416">#</span>
+                    </span>
+                </div>
+                <div>
+                    <div id="card-holder">
+                        <label for="card-hold">Card Holder</label>
+                        <span id="card-hold"></span>
+                    </div>
+                    <div id="card-expires">
+                        <label>Expires</label>
+                        <span>MM</span> / <span>YY</span>
+                    </div>
+                </div>
+            </div>
+            <div id="card-back">
+                <div id="bar-code"></div>
+                <div id="card-cvv"><label>CVV</label><div></div></div>
+                <img src="imagens/visa_logo.png">
+            </div>
+        </section>
+        <section class="form">
+            <div>
+                <label for="form-numb">Card Number</label>
+                <input type="number" id="form-numb">
+            </div>
+            <div>
+                <label for="form-hold">Card Holder</label>
+                <input type="text" id="form-hold">
+            </div>
+            <div>
+                
+            </div>
+            <div class="expire">
+                <div>
+                    <label for="expire-m">Expire Date</label>
+                    <select id="expire-m">
+                        <option value="00">Month</option>
+                        <option value="01">Janeiro</option>
+                        <option value="02">Fevereiro</option>
+                        <option value="03">Março</option>
+                        <option value="04">Abril</option>
+                        <option value="05">Maio</option>
+                        <option value="06">Junho</option>
+                        <option value="07">Julho</option>
+                        <option value="08">Agosto</option>
+                        <option value="09">Setembro</option>
+                        <option value="10">Outubro</option>
+                        <option value="11">Novembro</option>
+                        <option value="12">Dezembro</option>
+                    </select>
+                    <select id="expire-y">
+                        <option value="0">Year</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="cvv">cvv</label>
+                    <input type="text" id="cvv">
+                </div>
+            </div>
+            <div>
+                <input type="button" value="Submit">
+            </div>
+        </secction>
+    </main>
+</body>
+</html>
